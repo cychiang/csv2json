@@ -35,6 +35,6 @@ with open(filename, 'r') as stream:
         instance.append(template)
     """@bref create a file and store json data
     """
-    output_filename = filename.split(',')[0]
+    output_filename = filename.split('.')[0]
     with open(output_filename+'.json', 'w') as output:
         json.dump(instance, output, encoding='utf-8', ensure_ascii=False)
