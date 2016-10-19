@@ -32,7 +32,7 @@ with open(filename, 'r') as stream:
         clip = stream.split(',')
         for idx in range(len(clip)):
             template[template.keys()[idx]] = clip[idx]
-        instance.append(template)
+        instance.append(template.copy())
     """@bref create a file and store json data
     """
     output_filename = filename.split('.')[0]
